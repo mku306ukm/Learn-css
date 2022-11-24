@@ -21,23 +21,46 @@
             grid-template-rows: repeat(2, 120px);
             grid-gap: 15px;
 
-            grid-auto-rows: 60px;
-            grid-auto-flow: column;
+            grid-auto-rows: 70px;
 
-            grid-auto-columns: .5fr;
-            /* up wala ke 1fr ka half */
+            /*===Note=== align items work for all div 
+            this work vertically*/
+
+            /* align-items: center; */
+            /* align-items: start; */
+            /* align-items: end; */
+
+            /* align-items: stretch; */
+            /* it's default value */
+
+            /* justify-items: start; */
+            /* this work horizontaly */
+            /* justify-items: center; */
+
+            /* place-items: center start; */
+            place-items: center center;
+            /* align-item and justify-item dono ka use place-items me hota h */
         }
-
+        
         .item1 {
             background: rgb(243, 158, 147);
         }
-
+        
         .item2 {
             background: rgb(192, 182, 181);
+            /* align-self: center; */
+            /* align-self: start; */
+            /* its only work where we want to use */
+            
+            /* justify-self: end; */
+            
+            place-self: start end;
+            /* align-self and justify-self dono ka use place-self me hota h */
         }
 
         .item3 {
             background: rgb(79, 93, 221);
+            grid-row: span 3;
         }
 
         .item4 {
@@ -54,6 +77,8 @@
 
         .item7 {
             background: rgb(221, 79, 174);
+            grid-column: span 2;
+            justify-self: center;
         }
 
         .item8 {
@@ -63,7 +88,7 @@
         .items {
             color: #fff;
             font-size: 20px;
-             padding: 10px;
+            padding: 10px;
         }
     </style>
 </head>
