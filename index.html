@@ -18,20 +18,15 @@
         .container {
             margin: 40px auto 0;
             background: #eee;
-            /* width: 600px; */
-            width: 80%;
+            width: 650px;
+
 
             display: grid;
-            /* grid-template-columns: repeat(3, 100px); */
-            /* grid-template-columns: repeat(auto-fill, 100px); */
-            /* ---ye extra tracks(box)bna deta h--- */
+            grid-template-columns: fit-content(200px) fit-content(300px) 1fr;
 
-            /* grid-template-columns: repeat(auto-fit, 100px); */
-            /* ---ye extra tracks(box)nhi banata h--- */
-            
-            grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+            /* grid-template-rows: repeat(2, 100px); */
+            grid-template-rows: repeat(2, minmax(100px, min-content));
 
-            grid-template-rows: repeat(2, 100px);
 
             grid-auto-rows: 80px;
         }
@@ -50,8 +45,13 @@
 
         .item4 {
             background: rgb(145, 82, 204);
-            /* grid-column-end: -1; */
-            /* ---ye tv kam krega jb auto fill ka use kiya gya ho--- */
+        }
+        .item5 {
+            background: rgb(165, 243, 62);
+        }
+
+        .item6 {
+            background: rgb(235, 156, 221);
         }
 
         .items {
@@ -68,10 +68,12 @@
 
     <h2>grid-auto-fill-and-auto-fit</h2>
     <div class="container">
-        <div class="items item1">One</div>
-        <div class="items item2">Two</div>
+        <div class="items item1">One Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet nisi distinctio quam illo odit nemo tenetur adipisci inventore incidunt recusandae doloremque autem, nostrum perferendis nulla quos explicabo sit ut praesentium cum repellat quas omnis totam sequi. Ex dolore architecto consequuntur temporibus incidunt aliquid in minus, reiciendis nisi pariatur possimus neque adipisci doloremque ratione? Voluptates voluptatum sit eum expedita eligendi nulla earum maxime ullam eaque. Sunt, mollitia ea quia aliquid in quaerat optio earum. Totam assumenda nesciunt dignissimos at culpa est ipsum suscipit perspiciatis nostrum adipisci, iste veniam quibusdam maiores illum ad expedita ducimus officiis labore similique distinctio natus consequatur molestiae?</div>
+        <div class="items item2">Two Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa blanditiis alias amet debitis culpa, ad eaque odit voluptate molestiae atque expedita commodi minus sapiente exercitationem vero a repellendus! Aliquam ducimus recusandae qui dolor quam, vero atque repellat corrupti consectetur natus perferendis alias dolorem fugit quae itaque provident cum adipisci? Nobis, accusantium harum. Cumque natus dolorem voluptate temporibus tempore, soluta deserunt placeat doloremque omnis earum nulla ducimus eum aliquid sed consectetur eos. Asperiores nam amet odit nulla sequi dignissimos autem reiciendis, assumenda, quos alias minima neque? Provident, beatae quod dolor voluptas quis sit similique incidunt, suscipit doloremque molestias perspiciatis dolore adipisci.</div>
         <div class="items item3">Three</div>
         <div class="items item4">Four</div>
+        <div class="items item5">Five</div>
+        <div class="items item6">Six</div>
     </div>
 </body>
 
