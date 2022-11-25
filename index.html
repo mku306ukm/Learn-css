@@ -20,44 +20,37 @@
             background: #eee;
             width: 650px;
 
-
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-
-            grid-template-rows: repeat(2, 100px);
-
-
-            grid-auto-rows: 80px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 150px);
+            grid-gap: 10px;
         }
 
         .item1 {
             background: rgb(212, 205, 205);
-            order: 2;
+        
         }
 
         .item2 {
             background: rgb(241, 157, 157);
-            order: 5;
+            
         }
 
         .item3 {
             background: rgb(62, 243, 132);
-            order: 4;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+     }
+        .item3 > div{
+            background: #fff;
+            color: red;
+            padding: 10px;
         }
 
         .item4 {
             background: rgb(145, 82, 204);
-            order: 3;
-        }
-
-        .item5 {
-            background: rgb(165, 243, 62);
-            order: 6;
-        }
-
-        .item6 {
-            background: rgb(235, 156, 221);
-            order: 1;
+    
         }
 
         .items {
@@ -67,20 +60,19 @@
         }
     </style>
 </head>
-
 <body>
-
-
 
     <h2>grid-auto-fill-and-auto-fit</h2>
     <div class="container">
         <div class="items item1">One </div>
-            <div class="items item2">Two</div>
-            <div class="items item3">Three</div>
-            <div class="items item4">Four</div>
-            <div class="items item5">Five</div>
-            <div class="items item6">Six</div>
+        <div class="items item2">Two</div>
+        <div class="items item3">
+            <div class="subitem1">A</div>
+            <div class="subitem2">B</div>
+            <div class="subitem3">C</div>
         </div>
+        <div class="items item4">Four</div>
+    </div>
 </body>
 
 </html>
