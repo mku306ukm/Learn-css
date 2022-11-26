@@ -18,60 +18,57 @@
         .container {
             margin: 40px auto 0;
             background: #eee;
-            width: 650px;
+            width: 300px;
 
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 150px);
             grid-template-rows: repeat(2, 150px);
-            grid-gap: 10px;
         }
 
         .item1 {
-            background: rgb(212, 205, 205);
-        
+            background: rgb(231, 83, 83);
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2;
+            align-self: start;
+            padding: 10px;
+
         }
 
         .item2 {
-            background: rgb(241, 157, 157);
-            
+            background: rgb(93, 79, 223);
+             grid-column: 1 / span 2;
+            grid-row: 1 / span 2;
+            align-self: center;
+            justify-self: center;
+            padding: 10px;
+
         }
 
         .item3 {
-            background: rgb(62, 243, 132);
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 10px;
-     }
-        .item3 > div{
-            background: #fff;
-            color: red;
+            background: rgb(35, 190, 95);
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2;
+            align-self: end;
+            justify-self: end;
             padding: 10px;
-        }
-
-        .item4 {
-            background: rgb(145, 82, 204);
-    
+           
         }
 
         .items {
             font-size: 20px;
             color: #fff;
-            padding: 10px;
+            max-width: 150px;
         }
     </style>
 </head>
+
 <body>
 
     <h2>grid-auto-fill-and-auto-fit</h2>
     <div class="container">
-        <div class="items item1">One </div>
-        <div class="items item2">Two</div>
-        <div class="items item3">
-            <div class="subitem1">A</div>
-            <div class="subitem2">B</div>
-            <div class="subitem3">C</div>
-        </div>
-        <div class="items item4">Four</div>
+        <div class="items item1">One Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, numquam.</div>
+        <div class="items item2">Two Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, aperiam!</div>
+        <div class="items item3">Three Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, illum.</div>
     </div>
 </body>
 
